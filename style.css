@@ -1,7 +1,5 @@
-/* =========================================
-   GLOBAL STYLES
-========================================= */
-*{
+
+{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -27,9 +25,7 @@ img{
     display:block;
 }
 
-/* =========================================
-   NAVBAR
-========================================= */
+
 .custom-navbar,
 .navbar-custom{
     background:rgba(0,0,0,0.85);
@@ -87,9 +83,6 @@ img{
     transform:translateY(-2px);
 }
 
-/* =========================================
-   HERO SECTION
-========================================= */
 .hero-section{
     min-height:100vh;
     background:linear-gradient(rgba(0,0,0,0.65),
@@ -138,9 +131,7 @@ img{
     box-shadow:0 15px 40px rgba(0,0,0,0.35);
 }
 
-/* =========================================
-   SERVICES SECTION
-========================================= */
+
 .services{
     background:#fff;
 }
@@ -179,9 +170,7 @@ img{
     padding:10px 20px;
 }
 
-/* =========================================
-   ABOUT SECTION
-========================================= */
+
 .about-section{
     background:#f9f9f9;
 }
@@ -203,9 +192,7 @@ img{
     font-size:1rem;
 }
 
-/* =========================================
-   PROJECT PAGE
-========================================= */
+
 .projects-section{
     padding:60px 0;
 }
@@ -247,9 +234,6 @@ img{
     font-weight:600;
 }
 
-/* =========================================
-   SERVICES PAGE
-========================================= */
 .services-section{
     padding:60px 5%;
     background:#f5f5f5;
@@ -297,9 +281,7 @@ img{
     color:#fff;
 }
 
-/* =========================================
-   CONTACT PAGE
-========================================= */
+
 .contact-title{
     text-align:center;
     margin:60px 0 30px;
@@ -369,9 +351,7 @@ img{
     background:#d4af37;
 }
 
-/* =========================================
-   ABOUT PAGE
-========================================= */
+
 .page-title{
     text-align:center;
     margin:50px 0;
@@ -472,9 +452,7 @@ img{
     color:#777;
 }
 
-/* =========================================
-   FOOTER
-========================================= */
+
 footer,
 .footer-section{
     background:#111;
@@ -493,9 +471,7 @@ footer p,
     margin-bottom:8px;
 }
 
-/* =========================================
-   RESPONSIVE DESIGN
-========================================= */
+
 @media(max-width:992px){
 
     .hero-title{
