@@ -1,7 +1,13 @@
-// script.js
 
-alert("Welcome to NextGen Architecture!");
+document.querySelector('.booking-form')?.addEventListener('submit', function(e) {
+  e.preventDefault(); 
+  alert('Thank you! Your lesson booking has been received.');
+  this.reset(); /
+});
 
-function showMessage() {
-    alert("Thank you for visiting our website!");
-}
+
+document.querySelector('.feedback-form')?.addEventListener('submit', function(e) {
+  e.preventDefault(); 
+  alert('Thank you for your feedback! We appreciate your time.');
+  this.reset(); 
+});
