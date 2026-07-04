@@ -8,101 +8,93 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Top Navigation -->
+
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <!-- Logo -->
-            <a class="navbar-brand fw-bold fs-4" href="index.html">LOGO</a>
+            <!-- Logo as Image -->
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="NextGen Architecture" height="50">
+            </a>
 
-            <!-- Contact Us Button -->
-            <a href="contact.html" class="btn btn-dark border border-light ms-auto me-3">Contact Us</a>
-
-            <!-- Menu -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active bg-secondary px-3 text-white" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">HOME</a></li>
                     <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
                     <li class="nav-item"><a class="nav-link" href="portfolio.html">PROJECT</a></li>
                     <li class="nav-item"><a class="nav-link" href="services.html">SERVICE</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
                 </ul>
+                <a href="contact.html" class="btn btn-primary ms-3">Contact Us</a>
             </div>
         </div>
     </nav>
 
-    <!-- Main Content Area -->
+    <!-- Block 1: Welcome + Description + Image -->
     <div class="container mt-5">
         <div class="row align-items-center">
-            
-            <!-- Left Side: Welcome Text -->
-            <div class="col-lg-7">
+            <div class="col-lg-6">
                 <h1 class="display-4 fw-bold" id="typing-headline">Welcome to NextGen Architecture</h1>
                 <p class="lead mt-4">
                     We craft spaces that inspire and endure. Our approach blends innovative design with sustainable practice, 
                     creating architecture that responds to both human needs and environmental responsibility.
                 </p>
-                <a href="portfolio.html" class="btn btn-dark btn-lg px-5 mt-3">LEARN MORE</a>
+                <a href="about.html" class="btn btn-dark btn-lg px-5">LEARN MORE</a>
             </div>
 
-            <!-- Right Side: Image Placeholder -->
-            <div class="col-lg-5 text-center">
-                <div class="border p-4 bg-light">
-                    <!-- Put your big architectural image here -->
-                    <img src="images/hero-building.jpg" alt="Architecture" class="img-fluid" style="max-height: 320px;">
-                </div>
+            <!-- Right side image in Block 1 -->
+            <div class="col-lg-6 text-center">
+                <img src="images/hero-building.jpg" alt="Hero Building" class="img-fluid rounded shadow">
             </div>
         </div>
 
-        <!-- Four Categories -->
-        <div class="row mt-5 g-4">
-            <!-- Residential -->
+        <!-- Second Image under the texts (as requested) -->
+        <div class="text-center mt-5">
+            <img src="images/second-image.jpg" alt="Architecture Concept" class="img-fluid rounded shadow" style="max-height: 400px;">
+        </div>
+    </div>
+
+    <!-- Block 2: Categories (Horizontal) -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row g-4">
             <div class="col-md-3">
-                <div class="text-center border p-3 h-100">
+                <div class="text-center border p-3 h-100 category-card">
                     <h5>Residential</h5>
-                    <!-- Put Residential image here -->
-                    <img src="images/residential.jpg" alt="Residential" class="img-fluid my-3" style="height: 160px; object-fit: cover;">
-                    <a href="portfolio.html" class="btn btn-dark w-100">VIEW MORE</a>
+                    <img src="images/residential.jpg" alt="Residential" class="img-fluid my-3" style="height: 180px; object-fit: cover;">
+                    <a href="portfolio.html#residential" class="btn btn-dark w-100">VIEW MORE</a>
                 </div>
             </div>
-
-            <!-- Interior -->
             <div class="col-md-3">
-                <div class="text-center border p-3 h-100">
+                <div class="text-center border p-3 h-100 category-card">
                     <h5>Interior</h5>
-                    <!-- Put Interior image here -->
-                    <img src="images/interior.jpg" alt="Interior" class="img-fluid my-3" style="height: 160px; object-fit: cover;">
-                    <a href="portfolio.html" class="btn btn-dark w-100">VIEW MORE</a>
+                    <img src="images/interior.jpg" alt="Interior" class="img-fluid my-3" style="height: 180px; object-fit: cover;">
+                    <a href="portfolio.html#interior" class="btn btn-dark w-100">VIEW MORE</a>
                 </div>
             </div>
-
-            <!-- Commercial -->
             <div class="col-md-3">
-                <div class="text-center border p-3 h-100">
+                <div class="text-center border p-3 h-100 category-card">
                     <h5>Commercial</h5>
-                    <!-- Put Commercial image here -->
-                    <img src="images/commercial.jpg" alt="Commercial" class="img-fluid my-3" style="height: 160px; object-fit: cover;">
-                    <a href="portfolio.html" class="btn btn-dark w-100">VIEW MORE</a>
+                    <img src="images/commercial.jpg" alt="Commercial" class="img-fluid my-3" style="height: 180px; object-fit: cover;">
+                    <a href="portfolio.html#commercial" class="btn btn-dark w-100">VIEW MORE</a>
                 </div>
             </div>
-
-            <!-- Smart Tech -->
             <div class="col-md-3">
-                <div class="text-center border p-3 h-100">
+                <div class="text-center border p-3 h-100 category-card">
                     <h5>Smart Tech</h5>
-                    <!-- Put Smart Tech image here -->
-                    <img src="images/smart-tech.jpg" alt="Smart Tech" class="img-fluid my-3" style="height: 160px; object-fit: cover;">
-                    <a href="portfolio.html" class="btn btn-dark w-100">VIEW MORE</a>
+                    <img src="images/smart-tech.jpg" alt="Smart Tech" class="img-fluid my-3" style="height: 180px; object-fit: cover;">
+                    <a href="portfolio.html#smart" class="btn btn-dark w-100">VIEW MORE</a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white mt-5 py-4">
+    <footer class="bg-dark text-white py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -111,7 +103,7 @@
                     example@gmail.com
                 </div>
                 <div class="col-md-6 text-md-end">
-                    &copy; Copyright © 2026 NextGen Architecture. All rights reserved.
+                    © Copyright © 2026 NextGen Architecture. All rights reserved.
                 </div>
             </div>
         </div>
