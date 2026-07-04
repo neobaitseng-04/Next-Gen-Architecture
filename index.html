@@ -1,202 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NextGen Architecture</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Architecture | Modern Designs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <section class="hero-section">
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
-            <div class="container">
-
-                <a class="navbar-brand" href="#">NextGen Architecture</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-
-                    <ul class="navbar-nav ms-auto">
-
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Home</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="projects.html">Projects</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
-        <div class="container hero-content">
-
-            <div class="row align-items-center">
-
-                <div class="col-lg-6">
-
-                    <h1 class="hero-title">
-                        Welcome to <br>
-                        NextGen Architecture
-                    </h1>
-
-                    <p class="hero-text mt-4">
-                        We design modern, sustainable and innovative spaces that blend beauty,
-                        comfort and functionality. Our architectural solutions are crafted to
-                        inspire and endure for generations.
-                    </p>
-
-                    <button class="btn btn-custom mt-3">
-                        Learn More
-                    </button>
-
-                </div>
-
-                <div class="col-lg-6 text-center mt-5 mt-lg-0">
-                    <img src="images/architecture-homework.jpeg"
-                         class="img-fluid rounded shadow"
-                         alt="Architecture Main Image">
-
-                </div>
-
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">NextGen Architecture</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="btn btn-outline-light ms-3">Dark Mode</button>
             </div>
         </div>
-    </section>
-    <section class="services">
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="hero text-white text-center py-5">
         <div class="container">
+            <h1 class="display-4 fw-bold" id="typing-headline"></h1>
+            <p class="lead">Innovative Architectural Designs for Tomorrow</p>
+            <a href="portfolio.html" class="btn btn-primary btn-lg mt-3">Explore Portfolio</a>
+        </div>
+    </header>
 
-            <div class="row g-4">
-
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="service-card">
-
-                        <img src="images/high-end.jpeg" alt="Residential">
-
-                        <div class="p-3 text-center">
-                            <h5>Residential</h5>
-
-                            <p>
-                                Elegant and modern residential designs tailored to your lifestyle.
-                            </p>
-
-                            <button class="btn btn-dark">
-                                View More
-                            </button>
-                        </div>
-
+    <!-- Featured Designs -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Featured Projects</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://placehold.co/400x300?text=Modern+Home" class="card-img-top" alt="Modern Home">
+                    <div class="card-body">
+                        <h5 class="card-title">Urban Modern Villa</h5>
+                        <p class="card-text">Minimalist design with sustainable materials. Starting at $450,000</p>
+                        <a href="portfolio.html" class="btn btn-outline-primary">View Details</a>
                     </div>
                 </div>
-
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="service-card">
-
-                        <img src="images/interior.jpeg" alt="Interior Design">
-
-                        <div class="p-3 text-center">
-                            <h5>Interior</h5>
-
-                            <p>
-                                Stylish interior spaces designed with comfort and creativity.
-                            </p>
-
-                            <button class="btn btn-dark">
-                                View More
-                            </button>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-3">
-
-                    <div class="service-card">
-
-                        <img src="images/project3.jpeg" alt="Commercial">
-
-                        <div class="p-3 text-center">
-                            <h5>Commercial</h5>
-
-                            <p>
-                                Smart commercial architecture for businesses and organizations.
-                            </p>
-
-                            <button class="btn btn-dark">
-                                View More
-                            </button>
-             </div>
-           </div>
-         </div>
-    </section>
-    <section class="about-section">
-
-        <div class="container">
-
-            <div class="row align-items-center">
-
-                <div class="col-lg-6">
-                    <img src="images/architecture.jpeg"
-                         class="about-img"
-                         alt="About Architecture">
-                </div>
-
-                <div class="col-lg-6 mt-4 mt-lg-0">
-
-                    <h2 class="fw-bold">
-                        About Our Architecture Firm
-                    </h2>
-
-                    <p class="mt-4 text-muted">
-                        Our mission is to create inspiring architectural experiences through
-                        innovative designs, sustainable planning and modern aesthetics.
-                        We focus on quality, creativity and client satisfaction in every project.
-                    </p>
-
-                    <button class="btn btn-custom mt-3">
-                        Read More
-                    </button>
-
-                </div>
-
             </div>
-
+            <!-- Add 2 more cards similarly -->
         </div>
-
     </section>
-    <footer>
 
-        <div class="container text-center">
-
-            <p>
-                © 2026 NextGen Architecture. All Rights Reserved.
-            </p>
-
-        </div>
-
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2025 NextGen Architecture | All Rights Reserved</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
