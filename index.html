@@ -3,108 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NextGen Architecture | Modern Designs</title>
+    <title>NextGen Architecture</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <!-- Top Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand fw-bold fs-3" href="index.html">
-                NextGen<span class="text-primary">Arch</span>
-            </a>
+            <a class="navbar-brand fw-bold fs-4" href="index.html">LOGO</a>
 
+            <!-- Contact Us Button -->
+            <a href="contact.html" class="btn btn-dark border border-light ms-auto me-3">Contact Us</a>
+
+            <!-- Menu -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="btn btn-primary ms-3">Contact Us</a>
-                    </li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active bg-secondary px-3 text-white" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">PROJECT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">SERVICE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section with Big Building Overlay -->
-    <header class="hero d-flex align-items-center text-white position-relative">
-        <!-- Background Image (Big Architectural Building) -->
-        <div class="hero-bg"></div>
-        
-        <div class="container position-relative z-3 text-center">
-            <h1 class="display-3 fw-bold mb-3" id="typing-headline"></h1>
-            <p class="lead mb-4">Creating Tomorrow's Landmarks Today</p>
-            <a href="portfolio.html" class="btn btn-primary btn-lg px-5 py-3">Explore Our Projects</a>
-        </div>
-    </header>
+    <!-- Main Content Area -->
+    <div class="container mt-5">
+        <div class="row align-items-center">
+            
+            <!-- Left Side: Welcome Text -->
+            <div class="col-lg-7">
+                <h1 class="display-4 fw-bold" id="typing-headline">Welcome to NextGen Architecture</h1>
+                <p class="lead mt-4">
+                    We craft spaces that inspire and endure. Our approach blends innovative design with sustainable practice, 
+                    creating architecture that responds to both human needs and environmental responsibility.
+                </p>
+                <a href="portfolio.html" class="btn btn-dark btn-lg px-5 mt-3">LEARN MORE</a>
+            </div>
 
-    <!-- Four Categories Section (Matching Wireframe) -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Our Expertise</h2>
-            <div class="row g-4">
-                
-                <!-- Residential -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="category-card text-center">
-                        <div class="category-img mb-3">
-                            <!-- Put your Residential image here -->
-                            <img src="images/residential.jpg" alt="Residential" class="img-fluid rounded">
-                        </div>
-                        <h4>Residential</h4>
-                        <p>Modern homes &amp; luxury villas</p>
-                    </div>
-                </div>
-
-                <!-- Interior -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="category-card text-center">
-                        <div class="category-img mb-3">
-                            <!-- Put your Interior image here -->
-                            <img src="images/interior.jpg" alt="Interior" class="img-fluid rounded">
-                        </div>
-                        <h4>Interior Design</h4>
-                        <p>Elegant &amp; functional spaces</p>
-                    </div>
-                </div>
-
-                <!-- Commercial -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="category-card text-center">
-                        <div class="category-img mb-3">
-                            <!-- Put your Commercial image here -->
-                            <img src="images/commercial.jpg" alt="Commercial" class="img-fluid rounded">
-                        </div>
-                        <h4>Commercial</h4>
-                        <p>Offices, malls &amp; retail spaces</p>
-                    </div>
-                </div>
-
-                <!-- Smart Tech -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="category-card text-center">
-                        <div class="category-img mb-3">
-                            <!-- Put your Smart Tech image here -->
-                            <img src="images/smart-tech.jpg" alt="Smart Tech" class="img-fluid rounded">
-                        </div>
-                        <h4>Smart Tech</h4>
-                        <p>Future-ready intelligent buildings</p>
-                    </div>
+            <!-- Right Side: Image Placeholder -->
+            <div class="col-lg-5 text-center">
+                <div class="border p-4 bg-light">
+                    <!-- Put your big architectural image here -->
+                    <img src="images/hero-building.jpg" alt="Architecture" class="img-fluid" style="max-height: 320px;">
                 </div>
             </div>
         </div>
-    </section>
 
-    <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2025 NextGen Architecture | All Rights Reserved</p>
+        <!-- Four Categories -->
+        <div class="row mt-5 g-4">
+            <!-- Residential -->
+            <div class="col-md-3">
+                <div class="text-center border p-3 h-100">
+                    <h5>Residential</h5>
+                    <!-- Put Residential image here -->
+                    <img src="images/residential.jpg" alt="Residential" class="img-fluid my-3" style="height: 160px; object-fit: cover;">
+                    <a href="portfolio.html" class="btn btn-dark w-100">VIEW MORE</a>
+                </div>
+            </div>
+
+            <!-- Interior -->
+            <div class="col-md-3">
+                <div class="text-center border p-3 h-100">
+                    <h5>Interior</h5>
+                    <!-- Put Interior image here -->
+                    <img src="images/interior.jpg" alt="Interior" class="img-fluid my-3" style="height: 160px; object-fit: cover;">
+                    <a href="portfolio.html" class="btn btn-dark w-100">VIEW MORE</a>
+                </div>
+            </div>
+
+            <!-- Commercial -->
+            <div class="col-md-3">
+                <div class="text-center border p-3 h-100">
+                    <h5>Commercial</h5>
+                    <!-- Put Commercial image here -->
+                    <img src="images/commercial.jpg" alt="Commercial" class="img-fluid my-3" style="height: 160px; object-fit: cover;">
+                    <a href="portfolio.html" class="btn btn-dark w-100">VIEW MORE</a>
+                </div>
+            </div>
+
+            <!-- Smart Tech -->
+            <div class="col-md-3">
+                <div class="text-center border p-3 h-100">
+                    <h5>Smart Tech</h5>
+                    <!-- Put Smart Tech image here -->
+                    <img src="images/smart-tech.jpg" alt="Smart Tech" class="img-fluid my-3" style="height: 160px; object-fit: cover;">
+                    <a href="portfolio.html" class="btn btn-dark w-100">VIEW MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <strong>CONTACT</strong><br>
+                    +267 73 ______<br>
+                    example@gmail.com
+                </div>
+                <div class="col-md-6 text-md-end">
+                    &copy; Copyright © 2026 NextGen Architecture. All rights reserved.
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
