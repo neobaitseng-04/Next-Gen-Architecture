@@ -8,49 +8,98 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="index.html">NextGen Architecture</a>
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                NextGen<span class="text-primary">Arch</span>
+            </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="btn btn-primary ms-3">Contact Us</a>
+                    </li>
                 </ul>
-                <button id="theme-toggle" class="btn btn-outline-light ms-3">Dark Mode</button>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Banner -->
-    <header class="hero text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4 fw-bold" id="typing-headline"></h1>
-            <p class="lead">Innovative Architectural Designs for Tomorrow</p>
-            <a href="portfolio.html" class="btn btn-primary btn-lg mt-3">Explore Portfolio</a>
+    <!-- Hero Section with Big Building Overlay -->
+    <header class="hero d-flex align-items-center text-white position-relative">
+        <!-- Background Image (Big Architectural Building) -->
+        <div class="hero-bg"></div>
+        
+        <div class="container position-relative z-3 text-center">
+            <h1 class="display-3 fw-bold mb-3" id="typing-headline"></h1>
+            <p class="lead mb-4">Creating Tomorrow's Landmarks Today</p>
+            <a href="portfolio.html" class="btn btn-primary btn-lg px-5 py-3">Explore Our Projects</a>
         </div>
     </header>
 
-    <!-- Featured Designs -->
-    <section class="container my-5">
-        <h2 class="text-center mb-4">Featured Projects</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="https://placehold.co/400x300?text=Modern+Home" class="card-img-top" alt="Modern Home">
-                    <div class="card-body">
-                        <h5 class="card-title">Urban Modern Villa</h5>
-                        <p class="card-text">Minimalist design with sustainable materials. Starting at $450,000</p>
-                        <a href="portfolio.html" class="btn btn-outline-primary">View Details</a>
+    <!-- Four Categories Section (Matching Wireframe) -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Expertise</h2>
+            <div class="row g-4">
+                
+                <!-- Residential -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="category-card text-center">
+                        <div class="category-img mb-3">
+                            <!-- Put your Residential image here -->
+                            <img src="images/residential.jpg" alt="Residential" class="img-fluid rounded">
+                        </div>
+                        <h4>Residential</h4>
+                        <p>Modern homes &amp; luxury villas</p>
+                    </div>
+                </div>
+
+                <!-- Interior -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="category-card text-center">
+                        <div class="category-img mb-3">
+                            <!-- Put your Interior image here -->
+                            <img src="images/interior.jpg" alt="Interior" class="img-fluid rounded">
+                        </div>
+                        <h4>Interior Design</h4>
+                        <p>Elegant &amp; functional spaces</p>
+                    </div>
+                </div>
+
+                <!-- Commercial -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="category-card text-center">
+                        <div class="category-img mb-3">
+                            <!-- Put your Commercial image here -->
+                            <img src="images/commercial.jpg" alt="Commercial" class="img-fluid rounded">
+                        </div>
+                        <h4>Commercial</h4>
+                        <p>Offices, malls &amp; retail spaces</p>
+                    </div>
+                </div>
+
+                <!-- Smart Tech -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="category-card text-center">
+                        <div class="category-img mb-3">
+                            <!-- Put your Smart Tech image here -->
+                            <img src="images/smart-tech.jpg" alt="Smart Tech" class="img-fluid rounded">
+                        </div>
+                        <h4>Smart Tech</h4>
+                        <p>Future-ready intelligent buildings</p>
                     </div>
                 </div>
             </div>
-            <!-- Add 2 more cards similarly -->
         </div>
     </section>
 
