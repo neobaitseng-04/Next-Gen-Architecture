@@ -6,6 +6,19 @@
     <title>Services - NextGen Architecture</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .service-row {
+            border-bottom: 1px solid #ddd;
+            padding: 25px 0;
+        }
+        .service-row:last-child {
+            border-bottom: none;
+        }
+        .icon {
+            font-size: 48px;
+            width: 80px;
+        }
+    </style>
 </head>
 <body>
 
@@ -33,29 +46,60 @@
         </div>
     </nav>
 
-    <div class="container my-5">
+    <div class="container mt-5">
         <h1 class="text-center display-5 fw-bold mb-5">Our Services</h1>
-        <p class="text-center lead">We offer comprehensive architectural and design solutions.</p>
-        
-        <!-- Add your services content here later -->
-        <div class="row text-center mt-5">
-            <div class="col-md-4">
-                <h4>Architectural Design</h4>
-                <p>From concept to completion</p>
+
+        <!-- Residential -->
+        <div class="service-row row align-items-center">
+            <div class="col-md-1 text-center icon">🏠</div>
+            <div class="col-md-7">
+                <h4>Residential Design</h4>
+                <p>We create custom homes that reflect your unique lifestyle and values. From contemporary estates to sustainable family residences, our residential work prioritizes comfort, functionality, and timeless design that adapts to the way you live.</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 text-end">
+                <a href="residential-projects.html" class="btn btn-dark">Learn more</a>
+            </div>
+        </div>
+
+        <!-- Commercial -->
+        <div class="service-row row align-items-center">
+            <div class="col-md-1 text-center icon">🏢</div>
+            <div class="col-md-7">
+                <h4>Commercial Design</h4>
+                <p>Our commercial projects range from corporate headquarters to mixed-use developments. We design workspaces that inspire productivity, foster collaboration, and strengthen organizational culture while responding to the specific needs of your business.</p>
+            </div>
+            <div class="col-md-4 text-end">
+                <a href="commercial-projects.html" class="btn btn-dark">Learn more</a>
+            </div>
+        </div>
+
+        <!-- Interior -->
+        <div class="service-row row align-items-center">
+            <div class="col-md-1 text-center icon">💡</div>
+            <div class="col-md-7">
                 <h4>Interior Design</h4>
-                <p>Functional and beautiful spaces</p>
+                <p>Interior architecture is where experience meets detail. We craft thoughtful environments that enhance daily life through material selection, spatial flow, lighting design, and custom furnishings that bring cohesion to every space.</p>
             </div>
-            <div class="col-md-4">
-                <h4>Sustainable Solutions</h4>
-                <p>Eco-friendly & smart buildings</p>
+            <div class="col-md-4 text-end">
+                <a href="interior-projects.html" class="btn btn-dark">Learn more</a>
+            </div>
+        </div>
+
+        <!-- Smart Architecture -->
+        <div class="service-row row align-items-center">
+            <div class="col-md-1 text-center icon">🏗️</div>
+            <div class="col-md-7">
+                <h4>Smart Architecture</h4>
+                <p>We integrate cutting-edge building technology seamlessly into our designs. From automated climate control to intelligent security systems, our smart architecture solutions enhance comfort, efficiency, and sustainability without compromising aesthetic integrity.</p>
+            </div>
+            <div class="col-md-4 text-end">
+                <a href="smart-projects.html" class="btn btn-dark">Learn more</a>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="bg-dark text-white py-4 mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
