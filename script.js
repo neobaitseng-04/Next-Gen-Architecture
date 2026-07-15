@@ -1,5 +1,5 @@
 
-// Dark Mode Toggle - Fixed Version
+
 document.addEventListener('DOMContentLoaded', function() {
     const toggleButton = document.getElementById('theme-toggle');
     
@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleButton.addEventListener('click', function() {
             document.body.classList.toggle('dark-mode');
             
+            // Update button text
             if (document.body.classList.contains('dark-mode')) {
                 toggleButton.textContent = 'Light Mode';
             } else {
