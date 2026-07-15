@@ -1,5 +1,8 @@
+/* Import Merriweather Font */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Merriweather', serif;
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -10,8 +13,12 @@ body {
     align-items: center;
 }
 
-.card { transition: transform 0.3s; }
-.card:hover { transform: translateY(-10px); }
+.card { 
+    transition: transform 0.3s; 
+}
+.card:hover { 
+    transform: translateY(-10px); 
+}
 
 #typing-headline {
     min-height: 80px;
@@ -23,8 +30,12 @@ body.dark-mode {
     background-color: #222;
     color: #f8f9fa;
 }
-
-body.dark-mode .navbar { background-color: #121212 !important ; 
+body.dark-mode .card { 
+    background-color: #333; 
+    color: #f8f9fa; 
 }
 
-                        
+/* Optional improvements */
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+}  
