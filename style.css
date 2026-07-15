@@ -23,4 +23,8 @@ body.dark-mode {
     background-color: #222;
     color: #f8f9fa;
 }
-body.dark-mode .card { background-color: #333; color: #f8f9fa; }
+
+body.dark-mode .navbar { background-color: #121212 !important ; 
+}
+
+                        
